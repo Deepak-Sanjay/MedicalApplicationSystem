@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    tools:context=".FikDetails2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/purple_700"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/llActionbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgViewBack"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="15sp"
+
+                app:srcCompat="@drawable/back_arrow" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/euclidcirculara_medium"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="5dp"
+                android:text="SEIZURES"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_shape_from_top"
+            android:orientation="vertical"
+
+            android:padding="5dp">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/euclidcirculara_bold"
+                        android:gravity="center"
+
+                        android:padding="5dp"
+                        android:text="SEIZURES"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/euclidcirculara_medium"
+                        android:gravity="start|end|center_vertical"
+                        android:padding="5dp"
+                        android:text="In adults, the most common cause of a seizure, also known as a convulsion or fit, is epilepsy. However, it can be caused by other things, including a head injury, alcohol poisoning, lack of oxygen, after taking certain drugs, or if someone with diabetes has a 'hypo' where their blood glucose is too low.\nEpilepsy is a condition that affects the brain and can cause repeated seizures, which are often sudden and dramatic."
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/euclidcirculara_bold"
+                        android:gravity="start"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:padding="5dp"
+                        android:text="Signs and symptoms\nLook for:"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/euclidcirculara_medium"
+                        android:gravity="start|end|center_vertical"
+                        android:padding="5dp"
+                        android:text="&#10148;sudden loss of responsiveness\n&#10148;a rigid body with an arching back\n&#10148;noisy, difficult breathing\n&#10148;grey blue tinge on the lips\n&#10148;start of jerky uncontrolled movements (uncontrolled)\n&#10148;saliva at the mouth, possibly blood stained if they have bitten their tongue or lip\n&#10148;loss of bladder or bowel control."
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/euclidcirculara_bold"
+                        android:gravity="start"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:padding="5dp"
+                        android:text="What to do If they are responsive:"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/euclidcirculara_medium"
+                        android:gravity="start|end|center_vertical"
+                        android:padding="5dp"
+                        android:text="•	With any seizure, it is important to first protect the casualty from harming themselves during the fit. Ask any bystanders to stand back and clear away any potentially dangerous objects, like hot drinks or sharp objects. Make a note of the time that the seizure started\n•	Do not restrain the casualty or move them unless they are in immediate danger. Do not put anything in their mouth.\n•	Protect their head. You could place soft padding underneath it, such as a rolled-up towel. You should also loosen any clothing around their neck.\n•	When any jerky movements have stopped, open their airway and check their breathing. If they are breathing put them in the recovery position.\n•	Monitor their level of response and make a note of how long the seizure lasted. If they become unresponsive at any time, prepare to call 108 or 112 for emergency help and give CPR.\n•	Call 108 or 112 for emergency help if:\n	it is the casualty’s first seizure\n	they are having repeated seizures\n	the cause of the seizure is unknown\n	the seizure continues for more than five minutes\n	the casualty is unresponsive for more than 10 minutes\n	they have an injury on another part of the body."
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        />
+
+
+
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

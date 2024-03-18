@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    tools:context=".FikDetails3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/purple_700"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/llActionbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgViewBack"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="15sp"
+
+                app:srcCompat="@drawable/back_arrow" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/euclidcirculara_medium"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="5dp"
+                android:text="CPR"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_shape_from_top"
+            android:orientation="vertical"
+
+            android:padding="5dp">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/euclidcirculara_bold"
+                        android:gravity="center"
+
+                        android:padding="5dp"
+                        android:text="What is CPR?"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/euclidcirculara_medium"
+                        android:gravity="start|end|center_vertical"
+                        android:padding="5dp"
+                        android:text="CPR stands for cardiopulmonary resuscitation. It combines chest compressions and rescue breaths to give a person the best chance of survival following a cardiac arrest.\nIf an adult is unresponsive and not breathing normally, you still need to call 108 or 112 for emergency help and start CPR straight away."
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/euclidcirculara_bold"
+                        android:gravity="start"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:padding="5dp"
+                        android:text="What to do"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/euclidcirculara_medium"
+                        android:gravity="start|end|center_vertical"
+                        android:padding="5dp"
+                        android:text="•	If you find someone collapsed, make sure it's safe to appraoch, check if they respond by gently shaking their shoulders and asking them loudly are they ok. If they don't respond, shout for help and open their airway. Look, listen and feel for up to 10 seconds for normal breathing (ignore occasional, irregular gasps - these are common in the early stages of cardiac arrest).\n•	If they are not breathing normally, ask a helper to call 108 or 112 for an ambulance while you start chest compressions. Ask a helper to find and bring a defibrillator, if available.\n•	Ask your helper to put the phone on speaker and hold it out towards you.\n•	Do not leave the casualty to look for a defibrillator yourself if there is someone else there send them to get one.  The 108/112 emergency medical advisor can tell them where the nearest defibrillator is.\n•	If you're one your own, use the hands-free speaker on a phone to you can start CPR while speaking to ambulance control.\n•	Start CPR. Kneel by the casualty and put the heel of your hand on the middle of their chest. Put your other hand on top of the first and if you can, interlock your fingers.  \n•	Keep your arms straight and lean over the casualty. Press down hard, to a depth of about 5-6cm before releasing the pressure, allowing the chest to come back up. Push at a rate of 100 to 120 per minute.\n•	Listen to instructions from the ambulance controller, who will tell you what to do and help you to push at the right speed.\n•	Continue to perform CPR until: \n       o	Emergency help arrives and takes over\n     o	The person starts showing signs of life and starts to breathe normally\n        o	You are too exhausted to continue (if there is a helper, you should swap over every one-to-	two minutes, but try to minimise interruptions to chest compressions)\n     o	A defibrillator is ready to be used"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        />
+
+
+
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

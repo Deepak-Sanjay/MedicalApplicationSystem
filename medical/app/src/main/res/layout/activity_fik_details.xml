@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    tools:context=".FikDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/purple_700"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/llActionbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgViewBack"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="15sp"
+
+                app:srcCompat="@drawable/back_arrow" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/euclidcirculara_medium"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="5dp"
+                android:text="SPINAL CORD INJURY"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_shape_from_top"
+            android:orientation="vertical"
+
+            android:padding="5dp">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/euclidcirculara_bold"
+                        android:gravity="center"
+
+                        android:padding="5dp"
+                        android:text="SPINAL CORD INJURY"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/euclidcirculara_medium"
+                        android:gravity="start|end|center_vertical"
+                        android:padding="5dp"
+                        android:text="The greatest risk of someone who has a spinal injury is that their spinal cord will be either temporarily or permanently damaged. If this happens, they may lose sensation or power below the injured area."
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                          />
+                    <androidx.appcompat.widget.AppCompatTextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/euclidcirculara_bold"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:padding="5dp"
+                        android:text="Possible causes of a spinal injury:"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/euclidcirculara_medium"
+                        android:gravity="start|end|center_vertical"
+                        android:padding="5dp"
+                        android:text="&#10148;	falling from a height, for example, from a ladder\n&#10148; falling awkwardly, for example, while doing gymnastics\n&#10148; diving into a shallow pool and hitting the bottom\n&#10148; a collapsed rugby scrum\n&#10148; sudden deceleration in a vehicle\n&#10148; a heavy object falling across their back\n&#10148; an injury to the head or face."
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/euclidcirculara_bold"
+                        android:gravity="start"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:padding="5dp"
+                        android:text="Signs and symptoms\nLook for:"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/euclidcirculara_medium"
+                        android:gravity="start|end|center_vertical"
+                        android:padding="5dp"
+                        android:text="&#10148;	pain in the neck or back at the site of injury\n&#10148; irregular shape or twist in the normal curve of the spine\n&#10148; tenderness and/or bruising in the skin over the spine\n&#10148; movement of limbs may be weak or absent\n&#10148; loss of sensation, or abnormal sensations, e.g. burning or tingling\n&#10148; loss of bladder and/or bowel control\n&#10148; breathing difficulties."
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/euclidcirculara_bold"
+                        android:gravity="start"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:padding="5dp"
+                        android:text="What to do If they are responsive:"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/euclidcirculara_medium"
+                        android:gravity="start|end|center_vertical"
+                        android:padding="5dp"
+                        android:text="&#10148;Reassure the casualty. Do not move them and tell them not to move, unless they are in immediate danger. Call 108 or 112 for emergency help or ask someone else to call for you. \n&#10148;Steady and support their head, so that their head, neck, and spine are in a straight line to try and prevent further damage. To do this, kneel or lie behind their head, resting your elbows on the ground or on your knees to keep your arms steady. Hold each side of their head, spreading your fingers so that you do not cover their ears as they need to be able to hear you. Support their head in this neutral position. \n&#10148;If there is someone who can help you, ask them to put rolled-up blankets, towels, or clothes on either side of the head while you keep the casualty’s head in the neutral position. Continue to support their head until emergency help arrives and can take over, no matter how long it takes for them to come. \n&#10148; Keep monitoring their breathing and level of response while waiting for help to arrive."
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        />
+
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/euclidcirculara_bold"
+                        android:gravity="start"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:padding="5dp"
+                        android:text="What to do If they are unresponsive:"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/euclidcirculara_medium"
+                        android:gravity="start|end|center_vertical"
+                        android:padding="5dp"
+                        android:text="•	Reassure the casualty. Do not move them unless they are in immediate danger. Call 108 or 112 for emergency help or ask someone else to call for you.\n•	Steady and support their head so that their head, neck, and spine are in a straight line to try and prevent further damage. To do this, kneel or lie behind their head, resting your elbows on the ground or on your knees to keep your arms steady. Hold each side of their head, spreading your fingers so that you do not cover their ears as they need to be able to hear you. Support their head in this neutral position.\n•	Open their airway using the jaw-thrust technique. To do this, put your fingertips at the angles of the jaw and gently lift the jaw to open the airway. Do not tilt their neck.\n•	Check the casualty’s breathing. Place your ear above their mouth, looking down their body. Look, listen, and feel for 10 seconds.\n•	If they’re breathing, continue to support their head, monitor their breathing, and level of response. If they are unresponsive and not breathing, make sure you have called 108/112 for emergency help and start CPR straight away. Ask a helper to find and bring a defibrillator (AED)."
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
